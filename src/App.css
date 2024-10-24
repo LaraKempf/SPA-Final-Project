@@ -1,0 +1,418 @@
+body {
+  font-family: monospace;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.804);
+  color: antiquewhite;
+}
+
+
+.light {
+  background-color: rgb(255, 248, 239);
+  color: rgba(33, 32, 32, 0.898);
+}
+
+.colored {
+  background-color: rgb(63, 93, 79);
+  color: lightsalmon;
+}
+
+
+.header {
+
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+}
+
+.theme-button {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 50%;
+  border: none;
+  -webkit-box-shadow: 0px 1px 19px -7px #000000;
+  box-shadow: 0px 1px 19px -7px #000000;
+  cursor: pointer;
+
+}
+
+.theme-button-div {
+  display: flex;
+
+  margin: 10px;
+}
+
+.nav-buttons {
+  margin: 10px;
+  width: 50%;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+  letter-spacing: 0.2px;
+}
+
+.header-button {
+  height: 50px;
+  width: 25%;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 15px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  -webkit-box-shadow: inset -3px 4px 10px 1px rgba(0, 0, 0, 0.56);
+  box-shadow: inset -3px 4px 10px 1px rgba(0, 0, 0, 0.56);
+}
+
+.my-goals-title {
+
+
+  margin: 100px auto;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 20px;
+  height: 50px;
+}
+
+.greeting-quote {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  font-family: monospace;
+}
+
+.greeting-quote h1 {
+
+  text-transform: uppercase;
+  word-spacing: 1rem;
+  letter-spacing: 0.3rem;
+  font-weight: 700;
+  font-size: 50px;
+  align-self: center;
+
+  margin: 10px;
+}
+
+.greeting-quote h3 {
+
+  font-style: italic;
+  font-weight: 200;
+  font-size: 30px;
+  margin: 0;
+
+}
+
+.add-task form {
+
+  margin-top: 80px;
+  width: 80%;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.add-task form label {
+  font-size: 50px
+}
+
+.add-task form input {
+  width: 500px;
+  height: 40px;
+  color: black;
+  border-radius: 15px;
+  border: none;
+  -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.38);
+  box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.38);
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+
+}
+
+.add-task form input::placeholder {
+
+  text-align: center;
+  color: black;
+  font-size: 1.3rem;
+
+}
+
+.edit-time-buttons {
+
+  display: flex;
+  width: 400px;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+}
+
+.add-task button {
+  height: 40px;
+
+  width: 25%;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 15px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  -webkit-box-shadow: inset -3px 4px 10px 1px rgba(0, 0, 0, 0.56);
+  box-shadow: inset -3px 4px 10px 1px rgba(0, 0, 0, 0.56);
+  color: #B7674C;
+  cursor: pointer;
+
+}
+
+.add-task button[type='submit'] {
+  color: #B7674C;
+  -webkit-box-shadow: inset -4px 10px 37px 11px #6E415C;
+  box-shadow: inset -4px 10px 37px 11px #6E415C;
+  letter-spacing: 0.8rem;
+  font-weight: bolder;
+  font-size: 1.5rem
+}
+
+
+
+
+
+.added-tasks-home {
+
+  margin: 20px auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr)
+}
+
+.single-added-task-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.single-added-task-home button {
+  background-color: transparent;
+
+  font-size: 2.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* MY Goals Page  */
+.my-goals-page {
+  margin: 100px auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+}
+
+
+
+.tasks-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: auto;
+  height: 200px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.tasks-container input {
+  width: 600px;
+  height: 40px;
+  color: black;
+  border-radius: 15px;
+  border: none;
+  -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.38);
+  box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 0.38);
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.tasks-container input::placeholder {
+
+  text-align: center;
+  color: black;
+  font-size: 1.3rem;
+
+}
+
+.spent-time-buttons {
+
+  display: flex;
+  width: 400px;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+
+  padding: 10px;
+}
+
+.spent-time-buttons button {
+  width: 25%;
+  height: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 15px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  -webkit-box-shadow: inset -3px 4px 10px 1px rgba(0, 0, 0, 0.56);
+  box-shadow: inset -3px 4px 10px 1px rgba(0, 0, 0, 0.56);
+  color: #B7674C;
+  cursor: pointer;
+}
+
+
+
+.overview-container {
+  margin: 100px auto;
+  width: 80%;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.overview {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.overview-single {
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  margin: 10px;
+  width: 700px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+@media (max-width:780px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .nav-buttons {
+    width: 100%;
+  }
+
+  .overview-container {
+    flex-direction: column;
+    width: 400px
+  }
+
+  .overview-single {
+    width: 380px;
+
+  }
+
+}
+
+.well-done-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(34, 28, 20);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+
+}
+
+@keyframes colorChange {
+  0% {
+    color: #E1114A;
+  }
+
+  10% {
+    color: #0BD194;
+  }
+
+  20% {
+    color: #370094;
+  }
+
+  30% {
+    color: #D60CE1;
+  }
+
+  40% {
+    color: #41B20B
+  }
+
+  50% {
+    color: #E13307;
+  }
+
+  60% {
+    color: #0086D1;
+  }
+
+  70% {
+    color: #E0670B;
+  }
+
+  80% {
+    color: #E1114A;
+  }
+
+  90% {
+    color: #00D1CF;
+  }
+
+  100% {
+    color: #E19D01;
+  }
+}
+
+.congrats-message {
+  color: #fff;
+  animation: colorChange 2s linear infinite forwards;
+  font-size: 80px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
