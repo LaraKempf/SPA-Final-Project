@@ -5,7 +5,7 @@
 
 
 
-##  Built with React:!!!
+##  Built with React:
 
  - the tasks are saved in local Storage
  - React Router for navigating between Pages
@@ -25,4 +25,4 @@
 
  ## Preview
 
- ![Page](../spa-final-project-lara-kempf/public/Bildschirmaufzeichnungvom24-10-24095942-ezgif.com-video-to-gif-converter.gif)
+ ![Page](./public/Bildschirmaufzeichnungvom24-10-24095942-ezgif.com-video-to-gif-converter.gif)
